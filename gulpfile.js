@@ -198,7 +198,7 @@ gulp.task('unify-scripts',  function() {
 			paths.scripts.dest + 'angular.js',
 			paths.scripts.dest + 'main-scripts.js'
 		])
-		.pipe(concat('styles.js'))
+		.pipe(concat('scripts.js'))
 		.pipe(gulp.dest(paths.scripts.dest));
 
 	var minify = gulp.src([
@@ -206,7 +206,7 @@ gulp.task('unify-scripts',  function() {
 			paths.scripts.dest + 'angular.min.js',
 			paths.scripts.dest + 'main-scripts.min.js'
 		])
-		.pipe(concat('styles.min.js'))
+		.pipe(concat('scripts.min.js'))
 		.pipe(gulp.dest(paths.scripts.dest));
 
 	return merge(unminify, minify);
