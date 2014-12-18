@@ -81,6 +81,13 @@
 		border-right: $width/2 solid transparent
 		border-top: $height solid $color
 
+=backface-visibility ($arguments)
+	-webkit-backface-visibility: $arguments
+	-moz-backface-visibility: $arguments
+	-ms-backface-visibility: $arguments
+	-o-backface-visibility: $arguments
+	backface-visibility: $arguments
+
 =background-size($value)
 	-webkit-background-size: $value
 	-moz-background-size: $value
@@ -456,6 +463,12 @@
 	opacity: $value
 	filter: alpha(opacity=$value-ie) //IE8 and earlier
 
+=perspective($val)
+	-webkit-perspective: $val
+	-moz-perspective: $val
+	-ms-perspective: $val
+	perspective: $val
+
 =radial-gradient($startColor, $lastColor, $shape:null, $size:null, $position:null)
 
 	$sizePosition:null
@@ -480,6 +493,18 @@
 	background-image:     -ms-radial-gradient($shape unquote($size) unquote($position) unquote($startColor), unquote($lastColor)) // IE10+
 	background-image:      -o-radial-gradient($shape unquote($size) unquote($position) unquote($startColor), unquote($lastColor)) // Opera 11.10+
 	background-image:         radial-gradient($shape $sizePosition  unquote($startColor), unquote($lastColor)) // W3C
+
+=transform($val)
+	-webkit-transform: $val
+	-moz-transform: $val
+	-ms-transform: $val
+	transform: $val
+
+=transform-style($val)
+	-webkit-transform-style: $val
+	-moz-transform-style: $val
+	-ms-transform-style: $val
+	transform-style: $val
 
 =transition($parameters)
 	-webkit-transition: $parameters

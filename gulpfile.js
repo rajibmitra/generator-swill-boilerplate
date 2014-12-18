@@ -1,6 +1,6 @@
 /*
 	My Gulp.js Template
-	Version: 2.0.2beta
+	Version: 2.0.3beta
 	Author: Tiago Porto - http://www.tiagoporto.com
 	https://github.com/tiagoporto
 	Contact: me@tiagoporto.com
@@ -242,8 +242,8 @@ gulp.task('copy', function () {
 
 	// Copy Scripts
 	   var script =	gulp.src([
-	   						paths.scripts.dest + 'styles.js',
-	   						paths.scripts.dest + 'styles.min.js'
+	   						paths.scripts.dest + 'scripts.js',
+	   						paths.scripts.dest + 'scripts.min.js'
 	   					])
 						.pipe(gulp.dest(paths.scripts.build));
 
